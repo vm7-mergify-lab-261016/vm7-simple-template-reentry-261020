@@ -1,0 +1,11 @@
+pull_request_rules:
+  - name: VM7 safe-template data re-entry 261020
+    conditions:
+      - title = VM7_SIMPLE_TEMPLATE_REENTRY_261020
+      - -draft
+    actions:
+      comment:
+        message: |
+          VM7_RENDER_BEGIN_261020
+          {{ body }}
+          VM7_RENDER_END_261020
